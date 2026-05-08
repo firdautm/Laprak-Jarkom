@@ -97,6 +97,7 @@ Langkah - langkah:
   ![Filtering](assets/FilterIPv6.png)
 
 Hasilnya: 
+
 Pada Wireshark ditemukan paket dengan protokol IPv6. Paket tersebut memiliki alamat sumber dan tujuan sebagai berikut:
 - Source Address: *2001:4488:fc30::17db:ccdb*
 - Destination Address: *2404:c0:b601:49cb:edcb:3740:dfdc:aea4*
