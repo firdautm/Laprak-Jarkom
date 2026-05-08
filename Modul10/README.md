@@ -25,6 +25,7 @@ Langkah - langkah melakukan traceroute:
     Hasil traceroute menunjukkan bahwa paket data melewati beberapa router sebelum mencapai server tujuan Google dengan alamat IPv6: *2001:4860:4802:32::78*. Terdapat total sekitar 9 hop sebelum mencapai tujuan akhir. Dan pada hop ke-4 dan k-5 muncul pesan: *Request timed out*, Ini terjadi karena router pada hop tersebut tidak memberikan respon ICMP, namun paket tetap dapat melanjutkan perjalanan ke tujuan akhir.
 
 ## 3. Apa itu ICMP, MTU, dan TTL?
+
 a. ICMP (Internet Control Message Protocol)
    Merupakan protokol jaringan yang digunakan untuk mengirim pesan error dan informasi jaringan.
 
