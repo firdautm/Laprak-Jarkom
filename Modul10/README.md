@@ -28,6 +28,6 @@ Langkah - langkah melakukan traceroute:
 
 **a. ICMP (Internet Control Message Protocol)** Merupakan protokol jaringan yang digunakan untuk mengirim pesan error dan informasi jaringan.
 
-Contoh penggunaannya adalah:
-- **ping**
-- **traceroute**
+**Contoh penggunaannya adalah:**
+* **ping**
+* **traceroute**
