@@ -18,7 +18,7 @@ IP Address berfungsi sebagai identitas perangkat di jaringan, menentukan alamat 
 
 Langkah - langkah melakukan traceroute:
 - Buka Command Prompt
-- Ketik website yang ingin dicek contoh tracert google.com
+- Ketik website yang ingin dicek contoh **tracert google.com**
 - Tekan enter
 - Akan muncul daftar router/hop yang dilewati paket menuju website tujuan.
 
