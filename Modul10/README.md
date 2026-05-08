@@ -55,6 +55,27 @@ Langkah - langkah melakukan traceroute:
 Fragmentasi merupakan proses memecah paket IP menjadi beberapa bagian kecil karena ukuran paket lebih besar daripada MTU jaringan.
 
 Langkah - langkah mencari fragmentasi di Wireshark
-- Buka Wireshark
+- Buka wireshark dan mulai packet capture pada interface Wi-Fi
 - Mulai capture packet
+- Jalankan ping dengan ukuran besar di CMD (contoh: **ping -4 google.com -l 3000**)
 
+![Pinging](assets/Ping.png)
+
+- Stop capture di wireshark
+- Gunakan filter pada wireshark: **ip.flags.mf == 1**
+
+![Filtering](assets/Filter.png)
+
+Hasilnya:
+- **off=0** menunjukkan fragment pertama.
+- **off=1480** menunjukkan fragment berikutnya.
+- Wireshark kemudian melakukan proses reassembly untuk menyusun kembali fragment menjadi paket utuh.
+
+Semua fragment memiliki ID yang sama, misalnya: *ID=6484* menandakan bahwa fragment-fragment tersebut berasal dari satu paket IP yang sama.
+
+- *ping* digunakan untuk mengirim paket ICMP Echo Request ke host tujuan untuk menguji koneksi jaringan.
+- *-4* digunakan untuk memaksa sistem memakai protokol IPv4 agar fragmentasi lebih mudah diamati pada Wireshark.
+- *google.com* merupakan alamat tujuan pengiriman paket.
+- *-l 3000* digunakan untuk menentukan ukuran payload sebesar 3000 byte.
+
+ Ukurannya 3000 byte karena melebihi nilai MTU standar Ethernet yaitu sekitar 1500 byte. Jadi paket IPnya dipecah menjadi fragmentasi (beberapa bagian kecil)
