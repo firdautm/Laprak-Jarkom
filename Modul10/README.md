@@ -73,9 +73,35 @@ Hasilnya:
 
 Semua fragment memiliki ID yang sama, misalnya: *ID=6484* menandakan bahwa fragment-fragment tersebut berasal dari satu paket IP yang sama.
 
+### Penjelasan perintah: 
 - *ping* digunakan untuk mengirim paket ICMP Echo Request ke host tujuan untuk menguji koneksi jaringan.
 - *-4* digunakan untuk memaksa sistem memakai protokol IPv4 agar fragmentasi lebih mudah diamati pada Wireshark.
 - *google.com* merupakan alamat tujuan pengiriman paket.
 - *-l 3000* digunakan untuk menentukan ukuran payload sebesar 3000 byte.
 
  Ukurannya 3000 byte karena melebihi nilai MTU standar Ethernet yaitu sekitar 1500 byte. Jadi paket IPnya dipecah menjadi fragmentasi (beberapa bagian kecil)
+
+
+## 5. Mencari IPv6 pada Wireshark
+Langkah - langkah:
+- Buka wireshark
+- Pilih interface jaringan yang aktif (Wi-Fi/Ethernet) dan mulai packet capture
+- Buka CMD (Command Prompt)
+- Ketik **ping -6 google.com**
+
+  ![Pinging](assets/PingIPv6.png)
+
+- Stop capture di wireshark
+- Gunakan filter pada wireshark: **ipv6**
+
+  ![Filtering](assets/FilterIPv6.png)
+
+Hasilnya: 
+Pada Wireshark ditemukan paket dengan protokol IPv6. Paket tersebut memiliki alamat sumber dan tujuan sebagai berikut:
+- Source Address: *2001:4488:fc30::17db:ccdb*
+- Destination Address: *2404:c0:b601:49cb:edcb:3740:dfdc:aea4*
+
+### Penjelasan perintah:
+- *ping* digunakan untuk mengirim paket ICMP ke host tujuan
+- *-6* digunakan untuk memaksa sistem menggunakan protokol IPv6
+- *google.com* merupakan alamat tujuan pengiriman paket.
