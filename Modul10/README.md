@@ -59,7 +59,7 @@ Langkah - langkah mencari fragmentasi di Wireshark
 - Mulai capture packet
 - Jalankan ping dengan ukuran besar di CMD (contoh: **ping -4 google.com -l 3000**)
 
-  ![Pinging](assets/Ping.png)
+  
 
 - Stop capture di wireshark
 - Gunakan filter pada wireshark: **ip.flags.mf == 1**
