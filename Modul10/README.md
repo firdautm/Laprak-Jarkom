@@ -26,7 +26,7 @@ Langkah - langkah melakukan traceroute:
 
 ## 3. Apa itu ICMP, MTU, dan TTL?
 
-a. ICMP (Internet Control Message Protocol)
+**a. ICMP (Internet Control Message Protocol)**
    Merupakan protokol jaringan yang digunakan untuk mengirim pesan error dan informasi jaringan.
 
    Contoh penggunaannya adalah:
