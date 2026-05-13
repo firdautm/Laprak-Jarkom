@@ -9,7 +9,7 @@ DHCP menggunakan model **client-server** di atas protokol **UDP**. Dengan adanya
 
 
 ## 2. Kelebihan dan Kekurangan DHCP
-Kelebihan:
+### Kelebihan:
 - **Otomatis**
   Alamat IP akan diberikan secara otomatis oleh sistem, sehingga pengguna atau administrator tidak perlu mengaturnya secara manual.
 
@@ -25,7 +25,7 @@ Kelebihan:
 - **Menghindari konfigurasi invalid**
   Karena pengaturan IP dilakukan langsung oleh server, kemungkinan terjadinya kesalahan konfigurasi oleh pengguna menjadi lebih kecil.
 
-Kekurangan:
+### Kekurangan:
 - **Sulit di-tracking**
   Karena alamat IP dapat berubah-ubah secara otomatis, administrator menjadi lebih sulit mengetahui perangkat mana yang menggunakan IP tertentu. Hal ini dapat menyulitkan proses troubleshooting dan audit jaringan.
 
