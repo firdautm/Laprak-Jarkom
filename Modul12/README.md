@@ -28,7 +28,7 @@ Langkah - langkah:
 - Buka aplikasi Wireshark
 - Pilih interface jaringan yang sedang digunakan, misalnya Wi-Fi
 - Klik Start Capturing Packets untuk mulai menangkap paket
-- Lakukan ping pada Command Prompt seperti yang dilakuka tadi
+- Lakukan ping pada Command Prompt seperti yang dilakukan tadi
 - Tunggu hingga proses ping selesai
 - Stop Capturing Paket pada Wireshark
 - Gunakan filter **icmp**
